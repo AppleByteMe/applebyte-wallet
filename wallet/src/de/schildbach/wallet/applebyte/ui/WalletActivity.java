@@ -52,6 +52,7 @@ import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.text.format.DateUtils;
+import android.view.*;
 import android.webkit.WebView;
 import android.widget.*;
 import android.widget.AdapterView.OnItemSelectedListener;
