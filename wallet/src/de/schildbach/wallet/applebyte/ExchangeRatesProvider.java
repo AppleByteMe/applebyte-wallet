@@ -197,7 +197,7 @@ public class ExchangeRatesProvider extends ContentProvider
                 // This is applebytes priced in bitcoins
                 btcRate = avg;
                 String s_avg = String.format("%.4f", avg).replace(',', '.');
-                rates.put("BTC", new ExchangeRate("BTC", Utils.toNanoCoins(s_avg), URL.getHost()));
+                // rates.put("BTC", new ExchangeRate("BTC", Utils.toNanoCoins(s_avg), URL.getHost()));
             } finally
             {
                 if (reader != null)
