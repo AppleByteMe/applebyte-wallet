@@ -56,7 +56,7 @@ import com.google.applebyte.store.WalletProtobufSerializer;
 import de.schildbach.wallet.applebyte.service.BlockchainService;
 import de.schildbach.wallet.applebyte.service.BlockchainServiceImpl;
 import de.schildbach.wallet.applebyte.util.CrashReporter;
-import de.schildbach.wallet.feathercoin.util.LinuxSecureRandom;
+import de.schildbach.wallet.applebyte.util.LinuxSecureRandom;
 import de.schildbach.wallet.applebyte.util.StrictModeWrapper;
 import de.schildbach.wallet.applebyte.util.WalletUtils;
 import de.schildbach.wallet.applebyte.R;

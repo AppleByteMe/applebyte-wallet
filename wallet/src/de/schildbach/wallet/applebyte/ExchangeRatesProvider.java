@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin;
+package de.schildbach.wallet.applebyte;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -45,9 +45,9 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 import android.text.format.DateUtils;
 
-import com.google.feathercoin.core.Utils;
+import com.google.applebyte.core.Utils;
 
-import de.schildbach.wallet.feathercoin.util.IOUtils;
+import de.schildbach.wallet.applebyte.util.IOUtils;
 
 /**
  * @author Andreas Schildbach
@@ -96,7 +96,7 @@ public class ExchangeRatesProvider extends ContentProvider
 
 		if (exchangeRates == null || now - lastUpdated > UPDATE_FREQ_MS)
 		{
-			Map<String, ExchangeRate> newExchangeRates = getFeathercoinCharts();
+			Map<String, ExchangeRate> newExchangeRates = getApplebyteCharts();
 			if (exchangeRates == null && newExchangeRates == null)
 				newExchangeRates = getBlockchainInfo();
 
@@ -127,7 +127,7 @@ public class ExchangeRatesProvider extends ContentProvider
             try {
 			  cursor.newRow().add(code.hashCode()).add(rate.currencyCode).add(rate.rate.longValue()).add(rate.source);
             } catch (NullPointerException e) {
-                Log.e("Feathercoin", "Unable to add an exchange rate.  NullPointerException.");
+                Log.e("Applebyte", "Unable to add an exchange rate.  NullPointerException.");
             }
 		}
 
@@ -167,7 +167,7 @@ public class ExchangeRatesProvider extends ContentProvider
 		throw new UnsupportedOperationException();
 	}
 
-	private static Map<String, ExchangeRate> getFeathercoinCharts()
+	private static Map<String, ExchangeRate> getApplebyteCharts()
 	{
         final Map<String, ExchangeRate> rates = new TreeMap<String, ExchangeRate>();
         // Keep the BTC rate around for a bit
@@ -194,7 +194,7 @@ public class ExchangeRatesProvider extends ContentProvider
                 final JSONObject head = new JSONObject(content.toString());
                 JSONObject ticker = head.getJSONObject("BTC_ABY");
                 Double avg = ticker.getDouble("last");
-                // This is feathercoins priced in bitcoins
+                // This is applebytes priced in bitcoins
                 btcRate = avg;
                 String s_avg = String.format("%.4f", avg).replace(',', '.');
                 rates.put("BTC", new ExchangeRate("BTC", Utils.toNanoCoins(s_avg), URL.getHost()));

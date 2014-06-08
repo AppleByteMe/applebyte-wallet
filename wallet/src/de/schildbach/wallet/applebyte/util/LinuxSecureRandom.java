@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package de.schildbach.wallet.feathercoin.util;
+package de.schildbach.wallet.applebyte.util;
 
 import java.io.DataInputStream;
 import java.io.File;
