@@ -1,18 +1,18 @@
-With this app you always have your Litecoins with you, in your pocket! You can
+With this app you always have your Applebytes with you, in your pocket! You can
 send payments simply by scanning a QR-code or by touching two phones together
-(NFC). Litecoin Wallet is designed to be easy to use and reliable, while also
+(NFC). Applebyte Wallet is designed to be easy to use and reliable, while also
 being secure and fast.
 
 FEATURES:
 
 • No cloud server or web service needed! This wallet is truly peer to peer.
-• Display of wallet balance in Litecoin and various other currencies.
-• Sending and receiving of Litecoin via NFC, QR-codes or Litecoin URLs.
-• Address book for regularly used Litecoin addresses.
+• Display of wallet balance in Applebyte and various other currencies.
+• Sending and receiving of Applebyte via NFC, QR-codes or Applebyte URLs.
+• Address book for regularly used Applebyte addresses.
 • Enter transactions while offline, will be executed when online.
 • Manages blockchain on your device (for enhanced security).
-• System notifications for Litecoin connectivity and received coins.
-• App widget for Litecoin balance (requirement: app moved to phone).
+• System notifications for Applebyte connectivity and received coins.
+• App widget for Applebyte balance (requirement: app moved to phone).
 
 KNOWN ISSUES, PLEASE READ:
 
@@ -23,18 +23,18 @@ More Information:
 This app is based upon the excellent work done by the Bitcoin Wallet developers:
 https://code.google.com/p/bitcoin-wallet/
 
-It used a masterfully converted library called litecoinj, which was converted
+It used a masterfully converted library called applebytej, which was converted
 from bitcoinj:
-https://code.google.com/p/litecoinj/
+https://code.google.com/p/applebytej/
 
-You can find more about Litecoin at
-http://litecoin.org
+You can find more about Applebyte at
+http://applebyte.org
 
-If you want to contribute to Litecoin Wallet, the project is located at
-http://www.github.com/hank/litecoin-wallet
+If you want to contribute to Applebyte Wallet, the project is located at
+http://www.github.com/hank/applebyte-wallet
 
 License: GPLv3
 Use at your own risk!
 
 --
-LTC bitcoin wallet blockchain bitcoinandroid androidbitcoin Geldbörse Кошелёк mobile payment
+ABY bitcoin wallet blockchain bitcoinandroid androidbitcoin Geldbörse Кошелёк mobile payment

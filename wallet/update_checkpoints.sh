@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -k https://nyu/checkpoints -o assets/checkpoints
+curl -k https://nyu/pub/applebyte-checkpoints -o assets/checkpoints
