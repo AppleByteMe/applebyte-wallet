@@ -99,15 +99,6 @@ public final class WalletActivity extends AbstractWalletActivity
 		checkAlerts();
 
 		touchLastUsed();
-        if(haveOldKeys())
-        {
-            // Warn user
-            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setIcon(android.R.drawable.ic_dialog_alert);
-            builder.setTitle(R.string.warn_old_keys_title);
-            builder.setMessage(getString(R.string.warn_old_keys));
-            builder.show();
-        }
 	}
 
 	@Override
@@ -503,23 +494,6 @@ public final class WalletActivity extends AbstractWalletActivity
 			button.setEnabled(hasFile && (!needsPassword || hasPassword));
 		}
 	}
-
-    private boolean haveOldKeys()
-    {
-        // Checks for vulnerable keys
-        final ArrayList<ECKey> keychain = wallet.keychain;
-        for (final ECKey key : keychain)
-        {
-            final long creationTime = key.getCreationTimeSeconds();
-            if(creationTime < 1376440000) //  Wed, 14 Aug 2013 00:26:40 GMT
-            {
-                return true;
-            }
-        }
-
-        // No old keys were found.  We assume that the new RNG was used.
-        return false;
-    }
 
 	private void checkLowStorageAlert()
 	{
