@@ -92,20 +92,7 @@ public final class WalletBalanceFragment extends Fragment
 
 		final boolean showExchangeRatesOption = getResources().getBoolean(R.bool.show_exchange_rates_option);
 
-		if (showExchangeRatesOption)
-		{
-			view.setOnClickListener(new OnClickListener()
-			{
-				public void onClick(final View v)
-				{
-					startActivity(new Intent(getActivity(), ExchangeRatesActivity.class));
-				}
-			});
-		}
-		else
-		{
-			view.setEnabled(false);
-		}
+		view.setEnabled(false);
 
 		return view;
 	}
@@ -157,18 +144,7 @@ public final class WalletBalanceFragment extends Fragment
 
 			if (showLocalBalance)
 			{
-				if (exchangeRate != null)
-				{
-					final BigInteger localValue = WalletUtils.localValue(balance, exchangeRate.rate);
-					viewBalanceLocal.setVisibility(View.VISIBLE);
-					viewBalanceLocal.setPrefix(Constants.PREFIX_ALMOST_EQUAL_TO + exchangeRate.currencyCode);
-					viewBalanceLocal.setAmount(localValue);
-					viewBalanceLocal.setTextColor(getResources().getColor(R.color.fg_less_significant));
-				}
-				else
-				{
 					viewBalanceLocal.setVisibility(View.INVISIBLE);
-				}
 			}
 		}
 		else
