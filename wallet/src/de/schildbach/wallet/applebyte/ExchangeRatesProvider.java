@@ -223,7 +223,7 @@ public class ExchangeRatesProvider extends ContentProvider
                 // This is bitcoins priced in dollars.  We want ABY!
                 avg *= btcRate;
                 String s_avg = String.format("%.4f", avg).replace(',', '.');
-                rates.put("USD", new ExchangeRate("USD", Utils.toNanoCoins(s_avg), URL.getHost()));
+                // rates.put("USD", new ExchangeRate("USD", Utils.toNanoCoins(s_avg), URL.getHost()));
             } finally
             {
                 if (reader != null)
