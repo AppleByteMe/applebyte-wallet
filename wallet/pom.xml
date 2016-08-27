@@ -172,7 +172,7 @@
                             <include>${project.build.directory}/${project.artifactId}.apk</include>
                         </includes>
                         <keystore>/home/user/.keystore</keystore>
-                        <alias>feathercoin</alias>
+                        <alias>bushstar</alias>
                         <storepass>Nimule79!</storepass>
                         <keypass>Nimule79!</keypass>
                         <verbose>true</verbose>
