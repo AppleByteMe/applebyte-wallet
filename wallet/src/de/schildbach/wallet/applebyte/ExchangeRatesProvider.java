@@ -127,7 +127,7 @@ public class ExchangeRatesProvider extends ContentProvider
             try {
 			  cursor.newRow().add(code.hashCode()).add(rate.currencyCode).add(rate.rate.longValue()).add(rate.source);
             } catch (NullPointerException e) {
-                Log.e("Applebyte", "Unable to add an exchange rate.  NullPointerException.");
+                Log.e("ArtByte", "Unable to add an exchange rate.  NullPointerException.");
             }
 		}
 

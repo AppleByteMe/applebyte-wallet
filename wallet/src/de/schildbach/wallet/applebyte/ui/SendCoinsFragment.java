@@ -174,7 +174,7 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 		public void changed()
 		{
 			dismissPopup();
-            Log.d("Applebyte", "Amount: " + amountView.getAmount() + ", Fee: " + feeView.getAmount());
+            Log.d("ArtByte", "Amount: " + amountView.getAmount() + ", Fee: " + feeView.getAmount());
 			validateAmounts(false);
 		}
 
@@ -731,7 +731,7 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 			{
 				final Transaction transaction = wallet.sendCoinsOffline(sendRequest);
                 // Get the size of the transaction
-                Log.d("Applebyte", "Transaction size is " + transaction.getOutputs().size());
+                Log.d("ArtByte", "Transaction size is " + transaction.getOutputs().size());
 
 				handler.post(new Runnable()
 				{

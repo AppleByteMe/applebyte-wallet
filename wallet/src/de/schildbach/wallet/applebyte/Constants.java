@@ -53,8 +53,8 @@ public class Constants
 	public static final String WALLET_KEY_BACKUP_BASE58 = TEST ? WALLET_KEY_BACKUP_BASE58_TEST : WALLET_KEY_BACKUP_BASE58_PROD;
 
 	public static final File EXTERNAL_WALLET_BACKUP_DIR = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-	private static final String EXTERNAL_WALLET_KEY_BACKUP_PROD = "applebyte-wallet-keys";
-	private static final String EXTERNAL_WALLET_KEY_BACKUP_TEST = "applebyte-wallet-keys-testnet";
+	private static final String EXTERNAL_WALLET_KEY_BACKUP_PROD = "artbyte-wallet-keys";
+	private static final String EXTERNAL_WALLET_KEY_BACKUP_TEST = "artbyte-wallet-keys-testnet";
 	public static final String EXTERNAL_WALLET_KEY_BACKUP = TEST ? EXTERNAL_WALLET_KEY_BACKUP_TEST : EXTERNAL_WALLET_KEY_BACKUP_PROD;
 
 	private static final String WALLET_KEY_BACKUP_SNAPSHOT_PROD = "key-backup-snapshot";
@@ -79,7 +79,7 @@ public class Constants
 	public static final String MIMETYPE_TRANSACTION = "application/x-abytx";
 
 	public static final int MAX_NUM_CONFIRMATIONS = 7;
-	public static final String USER_AGENT = "Applebyte Wallet";
+	public static final String USER_AGENT = "ArtByte Wallet";
 	public static final String DEFAULT_EXCHANGE_CURRENCY = "USD";
 	public static final int WALLET_OPERATION_STACK_SIZE = 256 * 1024;
 	public static final long BLOCKCHAIN_DOWNLOAD_THRESHOLD_MS = 5 * DateUtils.SECOND_IN_MILLIS;
@@ -107,14 +107,14 @@ public class Constants
 	public static final String LICENSE_URL = "http://www.gnu.org/licenses/gpl-3.0.txt";
 	public static final String SOURCE_URL = "https://github.com/schildbach/bitcoin-wallet";
 	public static final String BINARY_URL = "https://github.com/schildbach/bitcoin-wallet";
-	public static final String CREDITS_APPLEBYTEJ_URL = "http://code.google.com/p/applebytej/";
+	public static final String CREDITS_APPLEBYTEJ_URL = "https://github.com/bitcoinj/bitcoinj";
 	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
 	public static final String CREDITS_ICON_URL = "https://bitcointalk.org/index.php?topic=178286.msg1928871#msg1928871";
 	public static final String AUTHOR_TWITTER_URL = "https://twitter.com/#!/bitcoins4life";
 	public static final String AUTHOR_GOOGLEPLUS_URL = "https://plus.google.com/104863093331110381886";
 	public static final String MARKET_APP_URL = "market://details?id=%s";
 	public static final String WEBMARKET_APP_URL = "https://play.google.com/store/apps/details?id=%s";
-	public static final String MARKET_PUBLISHER_URL = "market://search?q=pub:\"Bushstar\"";
+	public static final String MARKET_PUBLISHER_URL = "market://search?q=pub:\"Peter Bushnell\"";
 
 	private static final String VERSION_URL_PROD = "http://wallet.schildbach.de/version";
 	private static final String VERSION_URL_TEST = "http://wallet.schildbach.de/version_test";

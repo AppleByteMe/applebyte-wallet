@@ -113,7 +113,7 @@ public final class SendCoinsActivity extends AbstractWalletActivity
 		final String addressLabel;
 		final BigInteger amount;
 
-		if ((Intent.ACTION_VIEW.equals(action) || NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action)) && intentUri != null && "applebyte".equals(scheme))
+		if ((Intent.ACTION_VIEW.equals(action) || NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action)) && intentUri != null && "artbyte".equals(scheme))
 		{
 			try
 			{

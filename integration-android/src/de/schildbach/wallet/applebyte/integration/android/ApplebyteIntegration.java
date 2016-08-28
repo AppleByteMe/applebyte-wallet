@@ -171,7 +171,7 @@ public final class ApplebyteIntegration
 
 	private static void redirectToDownload(final Context context)
 	{
-		Toast.makeText(context, "No Applebyte application found.\nPlease install Applebyte Wallet.", Toast.LENGTH_LONG).show();
+		Toast.makeText(context, "No ArtByte application found.\nPlease install ArtByte Wallet.", Toast.LENGTH_LONG).show();
 
 		final Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=de.schildbach.wallet"));
 		final Intent binaryIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://code.google.com/p/applebyte-wallet/downloads/list"));

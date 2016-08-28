@@ -170,7 +170,7 @@
 
 		<receiver
 			android:name=".WalletBalanceWidgetProvider"
-			android:label="Applebyte Wallet Balance" >
+			android:label="ArtByte Wallet Balance" >
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>

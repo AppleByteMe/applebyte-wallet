@@ -7,7 +7,7 @@
 	<artifactId>sample-integration-android</artifactId>
 	<packaging>apk</packaging>
 	<version>1.0</version>
-	<name>Sample for Applebyte Integration for Android</name>
+	<name>Sample for ArtByte Integration for Android</name>
 
 	<parent>
 		<groupId>de.schildbach.wallet.applebyte</groupId>

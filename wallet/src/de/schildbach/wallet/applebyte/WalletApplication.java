@@ -74,7 +74,7 @@ public class WalletApplication extends Application
 	private ActivityManager activityManager;
 
 	private static final Charset UTF_8 = Charset.forName("UTF-8");
-	private static final String TAG = "Applebyte"+WalletApplication.class.getSimpleName();
+	private static final String TAG = "ArtByte"+WalletApplication.class.getSimpleName();
 
 	@Override
 	public void onCreate()
@@ -403,7 +403,7 @@ public class WalletApplication extends Application
 	public void resetBlockchain()
 	{
 		// actually stops the service
-        Log.d("Applebyte", "Sending blockchain service reset intent");
+        Log.d("ArtByte", "Sending blockchain service reset intent");
 		startService(blockchainServiceResetBlockchainIntent);
         android.os.Process.killProcess(android.os.Process.myPid());
 	}

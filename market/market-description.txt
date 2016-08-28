@@ -1,18 +1,18 @@
-With this app you always have your Applebytes with you, in your pocket! You can
+With this app you always have your ArtBytes with you, in your pocket! You can
 send payments simply by scanning a QR-code or by touching two phones together
-(NFC). Applebyte Wallet is designed to be easy to use and reliable, while also
+(NFC). ArtByte Wallet is designed to be easy to use and reliable, while also
 being secure and fast.
 
 FEATURES:
 
 • No cloud server or web service needed! This wallet is truly peer to peer.
-• Display of wallet balance in Applebyte and various other currencies.
-• Sending and receiving of Applebyte via NFC, QR-codes or Applebyte URLs.
-• Address book for regularly used Applebyte addresses.
+• Display of wallet balance in ArtByte and various other currencies.
+• Sending and receiving of ArtByte via NFC, QR-codes or ArtByte URLs.
+• Address book for regularly used ArtByte addresses.
 • Enter transactions while offline, will be executed when online.
 • Manages blockchain on your device (for enhanced security).
-• System notifications for Applebyte connectivity and received coins.
-• App widget for Applebyte balance (requirement: app moved to phone).
+• System notifications for ArtByte connectivity and received coins.
+• App widget for ArtByte balance (requirement: app moved to phone).
 
 KNOWN ISSUES, PLEASE READ:
 
@@ -21,20 +21,13 @@ KNOWN ISSUES, PLEASE READ:
 More Information:
 
 This app is based upon the excellent work done by the Bitcoin Wallet developers:
-https://code.google.com/p/bitcoin-wallet/
+https://github.com/bitcoin-wallet/bitcoin-wallet
 
-It used a masterfully converted library called applebytej, which was converted
-from bitcoinj:
-https://code.google.com/p/applebytej/
+It used a Bitcoin Java library called bitcoinj
+https://code.google.com/p/bitcoinj/
 
-You can find more about Applebyte at
-http://applebyte.org
-
-If you want to contribute to Applebyte Wallet, the project is located at
-http://www.github.com/hank/applebyte-wallet
+You can find more about ArtByte at
+http://artbyte.me
 
 License: GPLv3
 Use at your own risk!
-
---
-ABY bitcoin wallet blockchain bitcoinandroid androidbitcoin Geldbörse Кошелёк mobile payment
